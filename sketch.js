@@ -2,7 +2,7 @@ function setup() {
   noCanvas();
   
   let bot = new RiveScript();
-  bot.loadFile("brain.rive", brainReady, brainError);
+  bot.loadDirectory ("replies", brainReady, brainError);
 
   function brainReady() {
     console.log('Chatbot ready!');
